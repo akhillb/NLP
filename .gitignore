@@ -1,0 +1,8 @@
+data/mappings.txt
+data/graph.txt
+data/query.txt
+data/url.txt
+a.txt
+*.swp
+*.swo
+*.pyc
