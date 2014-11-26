@@ -58,7 +58,6 @@ json.dump(query_dict,output1)
 output1.write("\n")
 json.dump(url_dict,output1)
 
-print count
 print "Building bipartite graph..."
 graph = []
 for i in range( len(query_index)) :
