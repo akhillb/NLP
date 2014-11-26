@@ -2,7 +2,9 @@ data/mappings.txt
 data/graph.txt
 data/query.txt
 data/url.txt
+data/normalised.txt
 a.txt
 *.swp
 *.swo
 *.pyc
+*~
