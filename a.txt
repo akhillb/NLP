@@ -1,0 +1,51 @@
+AnonId	Query	QueryTime	ItemRank	ClickURL
+88	www.wingfieldrealestateauction.com	2006-03-01 13:32:54		
+88	www.rank	2006-03-01 13:33:31		
+1573	rties.com	2006-03-01 07:45:52		
+1573	www.stewartproperties.comtf-8	2006-03-01 07:47:51		
+1927	horoscope	2006-03-01 20:56:50	1	http://www.astrology.com
+2216	alltel	2006-03-01 08:45:03	1	http://www.alltel.com
+2216	at	2006-03-01 09:05:25		
+2216	at&t	2006-03-01 09:05:37	1	http://www.att.com
+2216	at&t	2006-03-01 09:05:37	1	http://www.att.com
+2216	whitepages.ocm	2006-03-01 13:48:41		
+2282	wwwaol.com	2006-03-01 06:55:19		
+2624	charmedbracelate	2006-03-01 00:43:59		
+2624	charmebracelet	2006-03-01 00:44:13	5	http://charm.netfirms.com
+2624	wwwcorploging.com	2006-03-01 11:53:01		
+3012	selectdate01.htm	2006-03-01 18:41:30		
+3399	sammyh	2006-03-01 21:44:59		
+4214	ebay	2006-03-01 13:49:30		
+4383	www.mytmolbe	2006-03-01 20:11:54		
+4383	www.mytmobile	2006-03-01 20:12:13		
+4383	www.mytmobile	2006-03-01 20:22:14		
+4383	www.mytmoble.com	2006-03-01 20:23:16		
+4383	mytmobile	2006-03-01 21:09:13	1	https://my.t-mobile.com/
+4383	mytmobile	2006-03-01 21:09:13	1	https://my.t-mobile.com/
+4383	mytmobile	2006-03-01 21:09:13	1	https://my.t-mobile.com/
+4383	mytmobile	2006-03-01 21:09:13	1	https://my.t-mobile.com/
+4383	mytmobile	2006-03-01 21:09:13	3	http://www-mytmobile-com.jgbn.be
+4383	mytmobile	2006-03-01 21:45:55	1	https://my.t-mobile.com/
+4463	games.myspace.com	2006-03-01 23:51:24		
+4463	games.myspace.com	2006-03-01 23:51:35		
+4463	games.myspace.com	2006-03-01 23:51:50		
+4463	games.myspace.com	2006-03-01 23:52:10		
+4463	games.myspace.com	2006-03-01 23:55:51		
+4790	yahoo.com	2006-03-01 21:57:41		
+4790	yahoo.com	2006-03-01 22:03:54		
+4790	yahoo.com	2006-03-01 22:14:43		
+4790	yahoo.com	2006-03-01 22:18:46		
+6557	flemmings	2006-03-01 16:04:31		
+6557	flemings	2006-03-01 16:04:50	1	http://www.flemingssteakhouse.com
+7882	www.celebrity.com	2006-03-01 10:09:53	1	http://www.celebrity.com
+7882	www.celebrity.com	2006-03-01 10:09:53	1	http://www.celebrity.com
+7882	www.celebrity.com	2006-03-01 10:09:53	1	http://www.celebrity.com
+7882	www.celebrity.com	2006-03-01 10:57:26	1	http://www.celebrity.com
+7960	pfizer	2006-03-01 17:59:45	3	http://www.viagra.com
+8204	-	2006-03-01 18:04:44		
+8468	wwmhs.org	2006-03-01 16:47:10		
+9006	cingular	2006-03-01 22:06:32		
+9006	lrs	2006-03-01 22:21:57		
+9339	hyundai	2006-03-01 18:41:50		
+9708	google.comhttp	2006-03-01 20:18:28		
+624808	www.lehighsafetyshoe.com	2006-03-01 23:09:53	2	http://www.searchport.org
