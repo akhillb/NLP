@@ -29,6 +29,7 @@ mine.py - Mines the whole search log and generates the following files
             -> graph.txt : Contains the adjacency matrix between queries and urls
             -> query.txt : Contains queries and their indices in the search log used for the graph
             -> url.txt : Contains urls and their indices used for the graph
+normalize.py - Reads the graph from the graph.txt and normalizes the edge weight
 
 NOTE:
 Do not COMMIT mappings.txt, graph.txt, query.txt, url.txt to the repository, as their combined size would be more than 1 GB.
