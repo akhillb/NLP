@@ -48,4 +48,116 @@ AnonId	Query	QueryTime	ItemRank	ClickURL
 9006	lrs	2006-03-01 22:21:57		
 9339	hyundai	2006-03-01 18:41:50		
 9708	google.comhttp	2006-03-01 20:18:28		
-624808	www.lehighsafetyshoe.com	2006-03-01 23:09:53	2	http://www.searchport.org
+9708	google.comhttp	2006-03-01 20:18:51		
+9708	.google.com	2006-03-01 20:19:05		
+9708	google.comhttp	2006-03-01 20:19:16		
+9708	www.google.com	2006-03-01 20:19:51		
+9708	www.google.com	2006-03-01 20:21:41		
+9708	www.google.com	2006-03-01 20:21:43		
+9708	www.rapiedesparishschools.com	2006-03-01 20:27:39		
+9708	www.rapiedesparishschools.com	2006-03-01 20:28:06		
+9708	www.rapiedesparishschools.com	2006-03-01 20:28:08		
+9708	www.rapidesparishschools.edu	2006-03-01 20:28:40		
+9708	www.rapidesparishschools.edu	2006-03-01 20:28:59		
+9984	tgp	2006-03-01 20:04:57	10	http://www.teentiger.com
+9984	msn	2006-03-01 20:29:44	1	http://www.msn.com
+9984	brthday.com	2006-03-01 21:17:17		
+9984	birthday.com	2006-03-01 21:17:30	1	http://www.happybirthday.com
+9984	4x4	2006-03-01 22:11:44	1	http://www.4x4wire.com
+11589	www.bestratedporn.com	2006-03-01 16:37:12		
+11658	mailhttp	2006-03-01 20:03:05		
+12378	moster	2006-03-01 07:26:23		
+12378	moster	2006-03-01 07:26:36	4	http://www.monster.com
+12811	cliphunter	2006-03-01 16:25:05	1	http://www.cliphunter.com
+12811	cliphunter	2006-03-01 16:25:05	2	http://www.dansmovies.com
+13703	www.wwe.com	2006-03-01 16:16:36	1	http://www.wwe.com
+13703	www.wwe.com	2006-03-01 16:16:36	1	http://www.wwe.com
+13703	www.wwe.com	2006-03-01 16:16:36	1	http://www.wwe.com
+13703	www.toontown.com	2006-03-01 16:42:31	1	http://play.toontown.com
+13703	www.toontown.com	2006-03-01 16:42:31	7	http://toontown.station.sony.com
+13703	www.cartoons.com	2006-03-01 17:15:19	1	http://www.cartoons.com
+13703	www.cartoons.com	2006-03-01 17:15:19	3	http://www.joeant.com
+13703	www.cartoons.com	2006-03-01 17:18:15		
+13812	dell	2006-03-01 10:27:23		
+13828	hrblock.com	2006-03-01 18:16:08	1	http://www.hrblock.com
+13828	amazon.com	2006-03-01 18:22:08	1	http://www.amazon.com
+14551	www.thankyouredemption.com	2006-03-01 15:38:20		
+14551	www.thankyouredemption.com	2006-03-01 15:38:57		
+14551	www.thankyouredemption.com	2006-03-01 15:39:04		
+14551	www.thankyouredemption.com	2006-03-01 15:39:04		
+14551	www.thankyouredemption.com	2006-03-01 15:39:36	1	http://www.wondertxt.com
+14551	www.thankyouredemption.com	2006-03-01 15:44:16		
+14551	www.wards.com	2006-03-01 15:56:17		
+15679	www.google.com	2006-03-01 14:24:50		
+16790	familywatchdog.us	2006-03-01 20:51:04	1	http://www.familywatchdog.us
+16790	familywatchdog.us	2006-03-01 20:51:04	2	http://www.stumbleupon.com
+16790	familywatchdog.us	2006-03-01 20:51:04	10	http://www.familywatchdog.us
+16790	familywatchdog.us	2006-03-01 20:51:04	1	http://www.familywatchdog.us
+17559	www.buyrent.com	2006-03-01 17:31:58		
+17559	www.buyrentfree.com	2006-03-01 17:34:18	1	http://www.buyrentfree.com
+18756	wwww.myspace.com	2006-03-01 00:09:02		
+18756	wwww.myspace.com	2006-03-01 00:09:05		
+18756	www.myspace.com	2006-03-01 00:09:09		
+18756	www.myspace.com	2006-03-01 00:09:12	1	http://www.myspace.com
+18756	ww.myspace.com	2006-03-01 17:23:48		
+19416	chlweb	2006-03-01 11:36:32		
+19416	chlweb	2006-03-01 11:37:04		
+19416	chlweb	2006-03-01 11:42:25		
+19416	www.cenyexhomeequity.com	2006-03-01 13:06:06		
+19416	1stcb.com	2006-03-01 13:50:38	1	http://www.1stcb.com
+20702	mapquest	2006-03-01 07:07:50	1	http://www.mapquest.com
+20702	mapquest	2006-03-01 07:07:50	2	http://www.mapquest.ca
+20702	mapquest	2006-03-01 07:07:50	2	http://www.mapquest.ca
+21686	news	2006-03-01 07:02:54		
+21718	weather	2006-03-01 22:30:19		
+21718	weather	2006-03-01 22:30:43	1	http://www.weather.com
+21950	www.plasmabeatz.com.com	2006-03-01 13:24:48		
+21950	www.plasmabeatz.com.com	2006-03-01 13:25:14		
+21950	www.plasmabeatz.com.com	2006-03-01 15:07:07		
+21950	www.plasmabat.com.com	2006-03-01 15:07:13		
+21950	www.plasmabeatz.com.com	2006-03-01 23:01:44		
+23751	fictionmani	2006-03-01 10:36:08		
+23751	prison4women	2006-03-01 10:47:56	4	http://www.premiumwanadoo.com
+23751	www.parkplazaoshkosh.com	2006-03-01 13:35:50		
+23924	lycos.com	2006-03-01 10:59:17	1	http://www.lycos.com
+23924	rfi.fr	2006-03-01 23:49:05	1	http://www.rfi.fr
+24013	ebay.com	2006-03-01 01:03:33		
+24092	www.	2006-03-01 23:30:46		
+24096	www.akronhistory.net	2006-03-01 19:37:44		
+24096	www.akronhistory.net	2006-03-01 19:38:52		
+24536	ymca	2006-03-01 22:27:23	1	http://www.ymca.net
+24902	lymphnodes	2006-03-01 21:33:02	1	http://www.med-ars.it
+24902	swollenlymphnodes	2006-03-01 21:40:48		
+24902	swellingoflymphnodes	2006-03-01 22:03:26		
+25469	horoscope	2006-03-01 21:11:41		
+25804	hotmail	2006-03-01 19:27:17	1	http://www.hotmail.com
+25804	hotmail	2006-03-01 19:27:17	1	http://www.hotmail.com
+25804	careerjournal	2006-03-01 19:30:21		
+25804	careerjournal	2006-03-01 19:30:22	1	http://www.careerjournal.com
+25804	monster.com	2006-03-01 19:35:17		
+25804	jobs	2006-03-01 19:44:23		
+25804	amozon	2006-03-01 20:23:01		
+25804	amazon	2006-03-01 20:23:44	1	http://www.amazon.com
+25804	amazon	2006-03-01 20:23:44	1	http://www.amazon.com
+25804	amazon	2006-03-01 20:23:44	1	http://www.amazon.com
+25804	amazon	2006-03-01 20:23:44	1	http://www.amazon.com
+25804	amazon	2006-03-01 20:23:44	1	http://www.amazon.com
+25804	southwest	2006-03-01 20:55:14	1	http://www.southwest.com
+25963	mapquest.com	2006-03-01 21:18:36		
+25963	wgal.com	2006-03-01 21:57:54	4	http://www.wgal.com
+26035	versace	2006-03-01 18:07:52		
+26035	versace	2006-03-01 18:08:18	20	http://www.style.com
+27335	thyroid	2006-03-01 03:05:15	1	http://thyroid.about.com
+27335	thyroid	2006-03-01 03:05:15	2	http://www.thyroid.org
+27335	thyroid	2006-03-01 03:06:47		
+27335	thyroid	2006-03-01 03:06:53	3	http://www.endocrineweb.com
+27335	ostbank	2006-03-01 05:39:23	7	http://1281805.32oh6gxu.info
+27335	aolatschool.print.factmonster.com	2006-03-01 13:01:08		
+27383	www.eliteclass.br	2006-03-01 01:36:53		
+27411	www.ebay.com	2006-03-01 16:35:44	1	http://www.ebay.com
+75010	hairextensions	2006-03-01 22:43:00	3	http://www.hairextensions.net
+75010	hairextensions	2006-03-01 22:43:00	3	http://www.hairextensions.net
+75010	hairextensions	2006-03-01 22:54:36		
+75010	hairextensions	2006-03-01 22:55:47		
+75010	hairextensions	2006-03-01 22:56:40		
+75010	hairextensions	2006-03-01 22:57:19	11	http://www.socap.nl
