@@ -16,8 +16,8 @@ for line in lines:
     if data[1] not in query:
 	query.add(data[1])
     if len(data) > 4:
-	if data[5] not in urls:
-	    urls.add(data[5])
+	if data[len(data)-1] not in urls:
+	    urls.add(data[len(data)-1])
 print "Statistics:"
 print "Unique queries: " + str(len(query))
 print "Unique users: " + str(len(users))
