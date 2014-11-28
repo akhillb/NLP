@@ -1,5 +1,5 @@
 import os
-import sys
+import re
 
 users = set()
 query = set()
@@ -14,16 +14,19 @@ for f in files:
 	a = open("./AOL-user-ct-collection/" +f,"r")
 	lines = a.readlines()
 	for line in lines:
-	    data = line.split()
-	    time = data[2].split('-')
-	    if time[:2] == date[:2]:
-		if int(time[2]) < int(date[2]) + 1:
-		    output.write(line)
-		    if data[0] not in users:
-			users.add( data[0] )
-		    if data[1] not in query:
-			query.add( data[1] )
-		    print line
+	    samayam = re.search("\d\d\d\d\-\d\d-\d\d \d\d\:\d\d\:\d\d",line)
+	    if samayam != None:
+		data = samayam.group(0).split()
+		time = data[0].split('-')
+		if time[2] == date[2] and time[1] == date[1]:
+		    clock = data[1].split(":")
+		    if int(clock[0]) < 1:
+			output.write(line)
+			if data[0] not in users:
+			    users.add( data[0] )
+			if data[1] not in query:
+			    query.add( data[1] )
+			print line
 	a.close()
 output.close()
 print
