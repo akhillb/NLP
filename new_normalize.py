@@ -6,23 +6,16 @@ output = open("normalised.txt","w")
 print "Starting normalizing..." 
 i = 0
 for line in file_name:
-    edges = line.split(" ")
+    edges = line.strip().split(" ")
     norm_sum = 0
-    index = []
-    data = line.strip().split()
-    length = len(data)
-    for i in range(0,length):
-	item = int(data[i])
-	if item > 0:
-	    norm_sum = norm_sum + item * item
-	    index.append(i)
-    m = len(index)
+    for edge in edges:
+		a = edge.split(",")[1]
+		norm_sum = norm_sum + int( a ) * int( a)
     norm_sum = pow(norm_sum,0.5)
-    for i in range(0,m):
-	data[index[i]] = str( float(data[index[i]]) / norm_sum )
     s = ""
-    for i in range(0,length):
-	s = s + str(data[i]) + " "
+    for edge in edges:
+	a = edge.split(",")
+	s = s + a[0] + "," + str(float(a[1])/norm_sum) + " "
     s = s.strip() + "\n"
     output.write(s)
 file_name.close()
