@@ -4,6 +4,11 @@ data/query.txt
 data/url.txt
 data/normalised.txt
 a.txt
+mappings.txt
+graph.txt
+query.txt
+url.txt
+normalised.txta.txt
 *.swp
 *.swo
 *.pyc
