@@ -38,15 +38,18 @@ def q_clus_distance( query, cluster, clusters, queries, total_dim ):
     return dist
 
 
-graph = sys.argv[1]
-f = open(graph,"r")
 output1 = open("clusters.txt","w")
-lines = f.readlines()
 queries = []
-for line in lines:
-    queries.append(map(float,line.split(' ')))
-total_dim = len(queries[0])
 
+print "Taking data input..."
+for line in sys.stdin:
+    line = map(float,line.strip().split())
+    if len(line) != 0:
+	queries.append(line)
+total_dim = len(queries[0])
+print "Data input done... dimension-",total_dim
+
+print "Starting clustering... "
 #dimensional array - assists in doing clustering
 #		     each entry is a set of cluster indices
 dim_array = []
@@ -60,6 +63,7 @@ cluster_num = 0
 query_num = 0
 D_MAX = 8 
 
+print "Doing clustering... "
 #clustering done here
 for query in queries:
     #identify cluster with atleast one dimesion matching with present
@@ -70,7 +74,6 @@ for query in queries:
     
     #find the cluster that has minimum dist to present query
     if( len(c_set) != 0 ):
-	print "Found similar sets"
 	c = list(c_set)[0]
 	min_d = q_clus_distance( query,c,clusters,queries,total_dim ) 
 	for clus in c_set:
@@ -85,7 +88,6 @@ for query in queries:
         test_c = set.union(clusters[c],temp)
         cluster_toappend_to = 0
 	dia=diameter( test_c, queries, total_dim)
-	print "diameter when added to cluster ",c," ",dia
         if dia <= D_MAX:
 	   cluster_toappend_to = c
         else:
@@ -110,9 +112,21 @@ for query in queries:
 	    dim_array[i] = set.union(dim_array[i],temp)
     
     query_num = query_num + 1
+print "Clusterng done... "
+print "Queries processed -",query_num
+print "Clusters formed -",cluster_num
+print "Creating json dumps... "
+#creating data that can be json dumped
+json_dim_array = []
+for i in range(0,len(dim_array)):
+    json_dim_array.append(list(dim_array[i]))
 
-json.dump(dim_array,output1)
+json_clusters = {}
+for clusterKey in clusters:
+    json_clusters[clusterKey]=list(clusters[clusterKey])
+
+print "Writing into file... "
+json.dump(json_dim_array,output1)
 output1.write("\n")
-json.dump(clusters,output1)
-f.close()
+json.dump(json_clusters,output1)
 output1.close()
