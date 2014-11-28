@@ -2,14 +2,16 @@ import sys
 import json
 
 def centroid( cluster, clusters , queries , total_dim):
-    c = []
+    c = {}
     count = len(clusters[cluster])
     for i in range(0,total_dim):
 	s = 0
 	for q in clusters[cluster]:
-	    s = s + queries[q][i]
+	    if queries[q].has_key(i):
+		s = s + queries[q][i]
 	s = s / count 
-	c.append(s)
+	if s != 0:
+	    c[i]=s
     return c
 
 #cluster here in this function is a set instead of a index
@@ -24,11 +26,12 @@ def diameter( cluster, queries, total_dim):
     return dia
 
 #distance between two queries 
-#NOTE query is not a index each one is a array 
+#NOTE query is not a index each one is a dictionary 
 def q_distance( q1, q2, queries, total_dim):
     dist=0
-    for i in range(0,total_dim):
-	dist = dist + ( q1[i] - q2[i] ) * ( q1[i] - q2[i] )
+    for i in q1:
+	if q2.has_key(i):
+	    dist = dist + (( q1[i] - q2[i] ) * ( q1[i] - q2[i] ))
     dist = pow(dist, 0.5)
     return dist
 
@@ -38,15 +41,21 @@ def q_clus_distance( query, cluster, clusters, queries, total_dim ):
     return dist
 
 
-output1 = open("clusters.txt","w")
 queries = []
-
+total_dim = 0
 print "Taking data input..."
 for line in sys.stdin:
-    line = map(float,line.strip().split())
-    if len(line) != 0:
-	queries.append(line)
-total_dim = len(queries[0])
+    if line_no == 1:
+	total_dim = int(line.strip())	
+    else:
+        line = map(float,line.strip().split(' '))
+        if len(line) != 0:
+	   query = {}
+    	   for pair in line:
+    	       key_val=pair.split(',')
+    	       query[int(key_val[0])]=int(key_val[1])
+    	   queries.push(query)
+	line_no = line_no + 1
 print "Data input done... dimension-",total_dim
 
 print "Starting clustering... "
@@ -69,7 +78,7 @@ for query in queries:
     #identify cluster with atleast one dimesion matching with present
     c_set = set()
     for i in range(0,total_dim):
-	if query[i] != 0:
+	if query.has_key(i):
 	    c_set = set.union(c_set,dim_array[i])
     
     #find the cluster that has minimum dist to present query
@@ -106,7 +115,7 @@ for query in queries:
     
     #add the newly formed cluster back into the dimenson array
     for i in range(0,total_dim):
-	if query[i] != 0:
+	if query.has_key(i):
 	    temp = set()
 	    temp.add(cluster_toappend_to)
 	    dim_array[i] = set.union(dim_array[i],temp)
@@ -126,6 +135,7 @@ for clusterKey in clusters:
     json_clusters[clusterKey]=list(clusters[clusterKey])
 
 print "Writing into file... "
+output1 = open("clusters.txt","w")
 json.dump(json_dim_array,output1)
 output1.write("\n")
 json.dump(json_clusters,output1)
