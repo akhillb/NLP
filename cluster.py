@@ -43,19 +43,20 @@ def q_clus_distance( query, cluster, clusters, queries, total_dim ):
 
 queries = []
 total_dim = 0
+line_no = 1
 print "Taking data input..."
 for line in sys.stdin:
     if line_no == 1:
 	total_dim = int(line.strip())	
     else:
-        line = map(float,line.strip().split(' '))
+        line = line.strip().split(' ')
         if len(line) != 0:
-	   query = {}
-    	   for pair in line:
-    	       key_val=pair.split(',')
-    	       query[int(key_val[0])]=int(key_val[1])
-    	   queries.push(query)
-	line_no = line_no + 1
+	    query = {}
+	    for pair in line:
+    	   	key_val=pair.split(',')
+    	   	query[int(key_val[0])]=float(key_val[1])
+	    queries.append(query)
+    line_no = line_no + 1
 print "Data input done... dimension-",total_dim
 
 print "Starting clustering... "

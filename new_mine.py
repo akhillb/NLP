@@ -65,31 +65,6 @@ json.dump(query_dict,output1)
 output1.write("\n")
 json.dump(url_dict,output1)
 
-#graph = []
-#for i in range( 0,len(query_index)) :
-#    temp = []
-#    for j in range( 0,len(url_index)) :
-#	temp.append(0)
-#    graph.append(temp)
-#
-#print "Adding edges..."
-#
-#print count
-#for item in query_dict:
-#    urls = query_dict[item]
-#    qi = query_index[item]
-#    for url in urls:
-#	ui = url_index[url]
-#	graph[qi][ui] = count[(qi,ui)]
-
-#print "Writing graph to file..."
-#for query in graph:
-#    s = ""
-#    for url in query:
-#	 s = s + str(url) + " "
-#    s = s.strip() + "\n" 
-#    output2.write(s)
-
 query_index = sorted(query_index.items(),key = lambda x:x[1])
 url_index = sorted(url_index.items(),key = lambda x:x[1])
 print "Writing Query indices..."
@@ -100,6 +75,7 @@ for item in url_index:
     output4.write( str(item[1]) + " : " + item[0] + "\n")
 
 print "Building bipartite graph..."
+output2.write(str(len(url_dict))+"\n")
 for q in query_index:
     s = ""
     for u in url_index:
