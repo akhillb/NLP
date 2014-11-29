@@ -36,7 +36,7 @@ def q_distance( q1, q2, queries, total_dim):
     return dist
 
 def q_clus_distance( query, cluster, clusters, queries, total_dim ):
-    centre = centroid( cluster, clusters, queries , total_dim)
+   centre = centroid( cluster, clusters, queries , total_dim)
     dist = q_distance( query, centre, queries, total_dim)
     return dist
 
