@@ -19,25 +19,26 @@ class MyTCPHandler(SocketServer.StreamRequestHandler):
 	    parent_prev = root
 	    parent = root
 	    for concept in self.concepts:
-		temp = parent[concept]
-		parent_prev = parent
-		parent = temp
+		if parent.has_key(concept):
+		    temp = parent[concept]
+		    parent_prev = parent
+		    parent = temp
 	    
 	    if len(parent["children"]) > 0:
-		items = sorted(parent["children"].items(),key = lambda x:x["count"],reverse=True)
+		items = sorted(parent["children"].items(),key = lambda x:x[1],reverse=True)
 		for tup in items:
-		    ret+=tems[0]+" "
+		    ret+=tup[0]+" "
 	    else:
 		items = sorted(parent_prev["children"].items(),key = lambda x:x["count"],reverse=True)
 		for tup in items:
-		    ret+=tems[0]+" "
+		    ret+=tup[0]+" "
 
 	    # Likewise, self.wfile is a file-like object used to write back
 	    # to the client
 	    self.wfile.write(ret)
 
 if __name__ == "__main__":
-        HOST, PORT = "localhost", 3000
+        HOST, PORT = "localhost", int(sys.argv[2])
 	# Create the server, binding to localhost on port 9999
 	server = SocketServer.TCPServer((HOST, PORT), MyTCPHandler)
 	# Activate the server; this will keep running until you
