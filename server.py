@@ -32,7 +32,7 @@ class MyTCPHandler(SocketServer.StreamRequestHandler):
 	    else:
 		items = sorted(parent_prev["children"].items(),key = lambda x:x[1],reverse=True)
 		for i in range(0,len(items)):
-		    if i > 19:
+		    if i > 4:
 			break
 		    ret+=items[i][0]+" "
 
