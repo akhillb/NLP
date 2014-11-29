@@ -19,8 +19,9 @@ class MyTCPHandler(SocketServer.StreamRequestHandler):
 	    parent_prev = root
 	    parent = root
 	    for concept in self.concepts:
-		if parent.has_key(concept):
-		    temp = parent[concept]
+		children = parent["children"] 
+		if children.has_key(concept):
+		    temp = children[concept]
 		    parent_prev = parent
 		    parent = temp
 	    
@@ -29,9 +30,11 @@ class MyTCPHandler(SocketServer.StreamRequestHandler):
 		for tup in items:
 		    ret+=tup[0]+" "
 	    else:
-		items = sorted(parent_prev["children"].items(),key = lambda x:x["count"],reverse=True)
-		for tup in items:
-		    ret+=tup[0]+" "
+		items = sorted(parent_prev["children"].items(),key = lambda x:x[1],reverse=True)
+		for i in range(0,len(items)):
+		    if i > 19:
+			break
+		    ret+=items[i][0]+" "
 
 	    # Likewise, self.wfile is a file-like object used to write back
 	    # to the client
