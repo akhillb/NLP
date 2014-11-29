@@ -40,12 +40,14 @@ def q_clus_distance( query, cluster, clusters, queries, total_dim ):
     dist = q_distance( query, centre, queries, total_dim)
     return dist
 
+f = open(sys.argv[1],"r")
+lines = f.readlines()
 
 queries = []
 total_dim = 0
 line_no = 1
 print "Taking data input..."
-for line in sys.stdin:
+for line in lines:
     if line_no == 1:
 	total_dim = int(line.strip())	
     else:
@@ -140,4 +142,6 @@ output1 = open("clusters.txt","w")
 json.dump(json_dim_array,output1)
 output1.write("\n")
 json.dump(json_clusters,output1)
+
 output1.close()
+f.close()

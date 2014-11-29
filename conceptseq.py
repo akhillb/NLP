@@ -39,7 +39,7 @@ def find_in_cluster(query_no):
 	    return cluster
     return -1
 	
-
+print "Creating user sessions"
 for line in lines:
     if line_no != 1:
 	samayam = re.search("\d\d\d\d\-\d\d-\d\d \d\d\:\d\d\:\d\d",line)
@@ -51,6 +51,7 @@ for line in lines:
 		user_sessions[data[0]].append(str(query_map[data[1]])+' '+samayam.group(0))
     line_no = line_no + 1
 
+print "Parsing through user sessions "
 for user in user_sessions:
     user_sessions[user].sort(key=parse_date_from_log_line)
     concept_seq=""
